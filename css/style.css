@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:1.2rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:black;
+    text-decoration: none;
+}
+.centro{
+    text-align: center;
+    display: block;
+    margin:0 auto 0 auto;
+    width:100%;
+}
+#logo{
+    color:#009b5e;
+}
+#hsaude{
+    color:#009b5e;
+    text-align: center;
+}
+#imgsaude{
+    width:100%;
+    max-width:500px;
+}
+#imginfo{
+    width:100%;
+    max-width:500px;
+}
+#botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:100px;
+}
+
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 9%);
+}
+#logo img{
+    width:100%;
+    max-width: 80px;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin-left:20px;
+}
+.menu a{
+    padding:10px;
+    display: block;
+}
+.menu a:hover{
+    color:#009b5e;
+    transition: 0.2s;
+}
+/*FOOTER*/
+.footer{
+    border-top:1px solid rgb(0 0 0 / 9%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px;
+}
+.footer .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer #logo{
+    color:#009b5e;
+}
+
+/*MAIN*/
+#titulo{
+    margin-top:100px;
+}
+.dietas{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1528px;
+    margin:50px auto;
+}
+.dieta-card{
+    max-width:362px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.dieta-card img{
+    border-radius:5px 5px 0 0;
+}
+.dieta-card h4{
+    font-size:1.3rem;
+    text-align: center;
+    padding-top:10px;
+}
+.dieta-card p{
+    font-size:1rem;
+    line-height: 30px;
+    text-align: center;
+}
+.dieta-card:hover {
+    transform: scale(1.01);
+    transition:0.5s;
+}
+.calculadora-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora{
+    flex-direction: row;
+    display: inline-flex;
+    text-align: center;
+    margin-bottom:100px;
+}
+/*SOBRE*/
+.sobre{
+    text-align: center;
+    max-width: 1200px;
+    display: block;
+    margin:20px auto 0 auto;
+}
+.dieta-conteudo{
+    max-width: 1200px;
+    display: block;
+    margin:20px auto 0 auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+.dieta-conteudo img{
+    display: block;
+    margin:20px auto 0 auto;
+}
+/*Responsivo*/
+
+/*Celular 320px - 425px*/
+@media screen and (min-width:320px) and (max-width:425px){
+    /*Header*/
+    .header{
+        display: block; 
+        margin:0 auto 0 auto;
+        text-align: center;
+     }
+     .menu{
+         display: block;
+         margin-top:20px;
+     }
+     .menu li{
+         margin:0;
+         text-align: center;
+         box-shadow: 0 3px 3px rgb(0 0 0 / 15%);
+     }
+     /*Main*/
+    #titulo{
+         margin-bottom:30px;
+         margin-top:80px;
+     }
+     .dietas{
+        display: block;
+        margin:0 auto 0  auto;
+     }
+     .dieta-card{
+        box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px;
+        border-radius: 5px;
+        margin:0 10px 20px 10px;
+        padding-bottom:5px;
+     }
+     .dieta-card img{
+        display: block;
+        margin:0  auto 0 auto;
+        width:100%;
+     }
+     .dieta-card p{
+        font-size:1rem;
+        line-height: 30px;
+        text-align: center;
+     }
+     .dieta-card:hover {
+        transform: none;
+     }
+     .calculadora-section{
+        display: block;
+        width:90%;
+        margin:0 auto;
+    }
+    .calculadora{
+        display: block;
+        width:90%;
+        margin:0 auto;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .footer .menu{
+        display: block;
+    }
+}
+@media screen and (min-width:425px) and (max-width:425px){
+     /*Main*/
+    #titulo{
+        margin-bottom:30px;
+        margin-top:80px;
+    }
+    .dietas{
+       display: block;
+       margin:0 auto 0  auto;
+    }
+    .dieta-card{
+       box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px;
+       border-radius: 5px;
+       margin:20px auto 0 auto;
+       padding-bottom:5px;
+       max-width: 362px;
+       display: block;
+    }
+    .dieta-card img{
+       display: block;
+       margin:0  auto 0 auto;
+       width:100%;
+    }
+    .dieta-card p{
+       font-size:1rem;
+       line-height: 30px;
+       text-align: center;
+    }
+    .dieta-card:hover {
+       transform: none;
+    }
+}
+
+/*Tablet 768px*/
+@media screen and (min-width:768px) and (max-width:768px){
+    /*Main*/
+    #titulo{
+        margin-bottom:30px;
+        margin-top:80px;
+    }
+    .dietas{
+        margin:0 auto 0  auto;
+    }
+    .dieta-card{
+        box-shadow: rgb(0 0 0 / 15%) 0px 2px 6px;
+        border-radius: 5px;
+        margin:20px auto 0 auto;
+        padding-bottom:5px;
+        max-width: 362px;
+    }
+    .dieta-card img{
+        display: block;
+        margin:0  auto 0 auto;
+        width:100%;
+    }
+    .dieta-card p{
+        font-size:1rem;
+        line-height: 30px;
+        text-align: center;
+    }
+    .dieta-card:hover {
+       transform: none;
+    }
+}
+/*Laptop 1024px - 1440px*/
+
+/*Laptop 1024px*/
+@media screen and (min-width:1024px) and (max-width:1024px){
+    /*Main*/
+    #titulo{
+        margin-bottom:30px;
+        margin-top:80px;
+    }
+    .dietas{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin:0 auto
+    }
+    .dieta-card{
+        margin-bottom:20px;
+    }
+    .dieta-card img{
+        display: block;
+        margin:0  auto 0 auto;
+        width:100%;
+    }
+    .dieta-card p{
+        font-size:1rem;
+        line-height: 30px;
+        text-align: center;
+    }
+    .dieta-card:hover {
+       transform: none;
+    }
+}
+/*Laptop 1440px*/
+@media screen and (min-width:1440px) and (max-width:1440px){
+    /*Main*/
+    #titulo{
+        margin-bottom:30px;
+        margin-top:80px;
+    }
+    .dietas{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin:0 auto
+    }
+    .dieta-card{
+        margin-bottom:20px;
+    }
+    .dieta-card img{
+        display: block;
+        margin:0  auto 0 auto;
+        width:100%;
+    }
+    .dieta-card p{
+        font-size:1rem;
+        line-height: 30px;
+        text-align: center;
+    }
+    .dieta-card:hover {
+       transform: none;
+    }
+}
